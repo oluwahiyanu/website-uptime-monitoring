@@ -1,0 +1,14 @@
+global:
+  smtp_smarthost: 'mxslurp.click:2525'
+  smtp_from: '5eede8dd-cef2-4ce9-adc8-c451435d466e@mailslurp.biz'
+  smtp_auth_username: '5eede8dd-cef2-4ce9-adc8-c451435d466e@mailslurp.biz'
+  smtp_auth_password: 'Pd81pAwJvRrCDIRyQ78n0LOdQ9ulOwfk'
+
+route:
+  receiver: 'mailslurp-alerts'
+
+receivers:
+  - name: 'mailslurp-alerts'
+    email_configs:
+      - to: '5eede8dd-cef2-4ce9-adc8-c451435d466e@mailslurp.biz'
+        send_resolved: true
